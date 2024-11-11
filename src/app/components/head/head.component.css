@@ -1,0 +1,68 @@
+section.head {
+  background: #ffffff;
+  padding-left: 150px;
+}
+
+.monitord-stations .text span:first-of-type {
+  font-size: 32px;
+}
+.monitord-stations .text span:last-of-type {
+  font-size: 13px;
+}
+.monitord-stations .inner div::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+}
+.last-update .inner {
+  background-color: #f9f5f3;
+  border-radius: 30px;
+  height: 28px;
+}
+.last-update .inner button {
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 18px;
+  transition: all 0.3s;
+}
+.last-update .inner .active {
+  color: #ffffff;
+  background-color: var(--main-color);
+}
+
+.last-update .inner button:hover {
+  transform: scale(1.02);
+}
+input {
+  transition: all 0.3s;
+  width: 140px;
+}
+input:focus {
+  box-shadow: none;
+  border-bottom: 1px solid var(--main-color) !important;
+}
+label[for="startDateInput"] {
+  border: 8px solid transparent;
+  border-left: 8px solid var(--main-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13px;
+}
+label[for="endDateInput"] {
+  background-color: var(--main-color);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13px;
+}

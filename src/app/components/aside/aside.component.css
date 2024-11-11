@@ -1,0 +1,23 @@
+canvas {
+  width: 320px !important;
+  height: 320px !important;
+}
+.bar {
+  width: 96%;
+  margin: 10px auto 0;
+  height: 6px;
+  background-color: #f4dbd4;
+  border-radius: 20px;
+}
+.bar span {
+  width: 40%;
+  background-color: var(--main-color);
+  height: 6px;
+  border-radius: 20px;
+}
+.box-special .bar {
+  background-color: #b9cde2;
+}
+.box-special .text > span {
+  color: #b9cde2;
+}

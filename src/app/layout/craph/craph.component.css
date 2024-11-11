@@ -1,0 +1,71 @@
+canvas {
+  margin-top: 30px;
+  height: 300px !important;
+  max-width: 800px;
+}
+
+#body {
+  margin-top: 70px;
+}
+
+p {
+  width: fit-content;
+}
+.chart {
+  background-color: #ffffff;
+  color: #3d5161;
+}
+.chart h3 {
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.chart ul li {
+  cursor: pointer;
+  margin-bottom: -7px;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s;
+}
+.chart .nav {
+  border-bottom: 1px solid #e0e7f1;
+}
+.chart ul li span {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: -1px;
+}
+
+.chart ul li.active {
+  color: var(--main-color);
+  border-bottom: 4px solid var(--main-color);
+}
+.routerLink {
+  background-color: #ffffff;
+  display: inline-block;
+  width: fit-content;
+  margin-left: auto;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.activeLink {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding-top: 230px;
+    padding-left: 100px !important;
+  }
+}
+@media (max-width: 992px) {
+  section {
+    padding-top: 230px;
+  }
+}
+@media (min-width: 993px) {
+  section {
+    padding-top: 107px;
+    padding: 100px;
+  }
+}

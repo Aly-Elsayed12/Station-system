@@ -1,0 +1,370 @@
+<app-navbar></app-navbar>
+<app-head></app-head>
+
+<section class="container">
+  <div class="row gx-4">
+    <div class="col-sm-12 col-lg-8">
+      <div class="inner">
+        <app-card></app-card>
+        <div
+          class="routerLink d-flex align-items-center justify-content-end mt-5"
+        >
+          <button class="btn" routerLink="/craph" routerLinkActive="activeLink">
+            <i class="fa-solid fa-signal"></i>
+            GRAPH
+          </button>
+          <button class="btn" routerLink="/list" routerLinkActive="activeLink">
+            <i class="fa-solid fa-list"></i>
+            LIST
+          </button>
+        </div>
+        <div class="data mt-5 overflow-y-auto px-3">
+          <div class="box border rounded p-3 mb-4">
+            <div
+              class="top d-flex align-items-center justify-content-between border-bottom border-1 py-3 mb-3"
+            >
+              <div class="text d-flex align-items-center">
+                <img
+                  src="./assets/image/gas-station-svgrepo-com.svg"
+                  class="me-3"
+                  alt=""
+                />
+                <h5 class="m-0">STATION NAME DUMMY</h5>
+              </div>
+              <div class="dropdown position-relative">
+                <span class="">
+                  <i class="fa-solid fa-ellipsis" (click)="Open(1)"></i>
+                </span>
+                <div
+                  class="dropdown-menu p-3 d-flex justify-content-between align-items-center position-absolute"
+                  [ngClass]="{ open: id == 1 && isOpen }"
+                >
+                  <ul class="me-3">
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option1"
+                        checked
+                      />
+                      <label class="form-check-label" for="option1"
+                        >Total sales
+                      </label>
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option2"
+                        checked
+                      />
+                      <label class="form-check-label" for="option2"
+                        >Total transaction</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option3"
+                        checked
+                      />
+                      <label class="form-check-label" for="option3"
+                        >Total value</label
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option4"
+                      />
+                      <label class="form-check-label" for="option4"
+                        >Max transaction count per hour</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option5"
+                      />
+                      <label class="form-check-label" for="option5"
+                        >Max transaction count date-time</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option6"
+                      />
+                      <label class="form-check-label" for="option6"
+                        >Compressor status</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="station-info d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <p class="mb-3">Total Sales: $5000</p>
+                <p>Total Value: $12000</p>
+              </div>
+              <div>
+                <p class="mb-3">Compression State: Compression</p>
+                <p>Total Transaction Count: 5161</p>
+              </div>
+              <div>
+                <p class="mb-3">Max Transaction / hour : 20</p>
+                <p>Max Transaction Date-Time: 8-1-2021 | 10:16 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="box border rounded p-3 mb-5">
+            <div
+              class="top d-flex align-items-center justify-content-between border-bottom border-1 py-3 mb-3"
+            >
+              <div class="text d-flex align-items-center">
+                <img
+                  src="./assets/image/gas-station-svgrepo-com.svg"
+                  class="me-3"
+                  alt=""
+                />
+                <h5 class="m-0">STATION NAME DUMMY</h5>
+              </div>
+              <div class="dropdown position-relative">
+                <span class="">
+                  <i class="fa-solid fa-ellipsis" (click)="Open(2)"></i>
+                </span>
+                <div
+                  class="dropdown-menu p-3 d-flex justify-content-between align-items-center position-absolute"
+                  [ngClass]="{ open: id == 2 && isOpen }"
+                >
+                  <ul class="me-3">
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option1"
+                        checked
+                      />
+                      <label class="form-check-label" for="option1"
+                        >Total sales
+                      </label>
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option2"
+                        checked
+                      />
+                      <label class="form-check-label" for="option2"
+                        >Total transaction</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option3"
+                        checked
+                      />
+                      <label class="form-check-label" for="option3"
+                        >Total value</label
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option4"
+                      />
+                      <label class="form-check-label" for="option4"
+                        >Max transaction count per hour</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option5"
+                      />
+                      <label class="form-check-label" for="option5"
+                        >Max transaction count date-time</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option6"
+                      />
+                      <label class="form-check-label" for="option6"
+                        >Compressor status</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="station-info d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <p class="mb-3">Total Sales: $5000</p>
+                <p>Total Value: $12000</p>
+              </div>
+              <div>
+                <p class="mb-3">Compression State: Compression</p>
+                <p>Total Transaction Count: 5161</p>
+              </div>
+              <div>
+                <p class="mb-3">Max Transaction / hour : 20</p>
+                <p>Max Transaction Date-Time: 8-1-2021 | 10:16 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="box border rounded p-3 mb-5">
+            <div
+              class="top d-flex align-items-center justify-content-between border-bottom border-1 py-3 mb-3"
+            >
+              <div class="text d-flex align-items-center">
+                <img
+                  src="./assets/image/gas-station-svgrepo-com.svg"
+                  class="me-3"
+                  alt=""
+                />
+                <h5 class="m-0">STATION NAME DUMMY</h5>
+              </div>
+              <div class="dropdown position-relative">
+                <span class="">
+                  <i class="fa-solid fa-ellipsis" (click)="Open(3)"></i>
+                </span>
+                <div
+                  class="dropdown-menu p-3 d-flex justify-content-between align-items-center position-absolute"
+                  [ngClass]="{ open: id == 3 && isOpen }"
+                >
+                  <ul class="me-3">
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option1"
+                        checked
+                      />
+                      <label class="form-check-label" for="option1"
+                        >Total sales
+                      </label>
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option2"
+                        checked
+                      />
+                      <label class="form-check-label" for="option2"
+                        >Total transaction</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option3"
+                        checked
+                      />
+                      <label class="form-check-label" for="option3"
+                        >Total value</label
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option4"
+                      />
+                      <label class="form-check-label" for="option4"
+                        >Max transaction count per hour</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option5"
+                      />
+                      <label class="form-check-label" for="option5"
+                        >Max transaction count date-time</label
+                      >
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="option6"
+                      />
+                      <label class="form-check-label" for="option6"
+                        >Compressor status</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="station-info d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <p class="mb-3">Total Sales: $5000</p>
+                <p>Total Value: $12000</p>
+              </div>
+              <div>
+                <p class="mb-3">Compression State: Compression</p>
+                <p>Total Transaction Count: 5161</p>
+              </div>
+              <div>
+                <p class="mb-3">Max Transaction / hour : 20</p>
+                <p>Max Transaction Date-Time: 8-1-2021 | 10:16 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <div class="inner p-3">
+        <app-aside></app-aside>
+      </div>
+    </div>
+  </div>
+</section>
